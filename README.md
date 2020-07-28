@@ -1,29 +1,40 @@
 # await-button
+await-buttons is a super simple module that add a loading indicator to a button of when you process a promose or await code. Check out the demo!
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
+## Getting started
+Install it via npm:
 ```
-npm run build
+npm install -S
 ```
 
-### Run your unit tests
-```
-npm run test:unit
+
+### Usage
+
+``` HTML
+<AwaitButton @click="handleBtnClick">hihi</AwaitButton>
 ```
 
-### Lints and fixes files
-```
-npm run lint
+``` javascript
+import AwaitButton from 'await-button'
+export default {
+  name: 'HelloWorld',
+  props: {
+    msg: String
+  },
+  components: {
+    AwaitButton
+  },
+  methods: {
+    handleBtnClick () {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve()
+        }, 1000)
+      })
+    }
+  }
+}
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

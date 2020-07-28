@@ -1,6 +1,6 @@
 <template>
   <div>
-    <AwaitButton @click="handleBtnClick">dsa</AwaitButton>
+    <AwaitButton @click="handleBtnClick">按我</AwaitButton>
   </div>
 </template>
 
