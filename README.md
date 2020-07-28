@@ -6,14 +6,14 @@ await-buttons is a super simple module that add a loading indicator to a button 
 ## Getting started
 Install it via npm:
 ```
-npm install -S
+npm i await-button -S
 ```
 
 
 ### Usage
 
 ``` HTML
-<AwaitButton @click="handleBtnClick">hihi</AwaitButton>
+<AwaitButton @click="handleBtnClick">Click me</AwaitButton>
 ```
 
 ``` javascript
