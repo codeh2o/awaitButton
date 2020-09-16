@@ -1,16 +1,14 @@
 <template>
-  <div>
-    <button
-      v-on="btnListeners"
-      class="btn"
-      :class="{isLoading}"
-      v-bind="$attrs"
-      :disabled="isDisabled"
-    >
-      <slot></slot>
-      <i class="el-icon-loading icon" v-show="showLoadingIcon"></i>
-    </button>
-  </div>
+  <button
+    v-on="btnListeners"
+    class="btn"
+    :class="{'loading':isLoading}"
+    v-bind="$attrs"
+    :disabled="isDisabled"
+  >
+    <slot></slot>
+    <i class="el-icon-loading icon" v-show="showLoadingIcon"></i>
+  </button>
 </template>
 
 <script>
@@ -78,19 +76,19 @@ export default {
 }
 
 .btn {
-  background: #2f54eb;
+  border: 1px solid rgba(217, 217, 217, 1);
+  background: #fff;
   border-radius: 4px;
   padding: 8px 24px;
   font-size: 14px;
   line-height: 1.5;
-  color: #fff;
+  color: #000;
   margin: 0 8px;
-  border: 0 none;
   cursor: pointer;
 }
 
 .btn:hover {
-  background: #082bb9;
+  background: rgba(217, 217, 217, 1);
 }
 
 .btn:disabled {
@@ -99,7 +97,7 @@ export default {
   background: rgba(217, 217, 217, 1);
 }
 
-.isLoading {
-  background: #2f54eb !important;
+.loading {
+  background: rgba(217, 217, 217, 1);
 }
 </style>
