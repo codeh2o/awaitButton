@@ -76,28 +76,29 @@ export default {
 }
 
 .btn {
-  border: 1px solid rgba(217, 217, 217, 1);
-  background: #fff;
-  border-radius: 4px;
-  padding: 8px 24px;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #000;
-  margin: 0 8px;
+  // border: 1px solid rgba(217, 217, 217, 1);
+  // background: #fff;
+  // border-radius: 4px;
+  // padding: 8px 24px;
+  // font-size: 14px;
+  // line-height: 1.5;
+  // color: #000;
+  // margin: 0 8px;
   cursor: pointer;
 }
 
 .btn:hover {
-  background: rgba(217, 217, 217, 1);
+  // background: rgba(217, 217, 217, 1);
 }
 
 .btn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
-  background: rgba(217, 217, 217, 1);
+  // background: rgba(217, 217, 217, 1);
 }
 
 .loading {
-  background: rgba(217, 217, 217, 1);
+  opacity: 0.5;
+  // background: rgba(217, 217, 217, 1);
 }
 </style>
